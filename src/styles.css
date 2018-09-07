@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: #333;
+    height: 40px;
+    padding: 20px;
+    color: white;
+    margin-left: 15px;
+}
+
+.App-title,
+.App-logo,
+.App-brand {
+    font-size: 1.75em;
+    width: 200px;
+}
+
+.App-brand {
+    color: dodgerblue;
+}
+
+/* PollsList */
+
+.list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    margin: 20px 0;
+    width: 70%;
+}
+
+/* Poll */
+.poll {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 25px 0;
+    position: relative;
+    padding: 2px 16px;
+}
+
+.poll:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.poll-remove-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    background: orangered;
+}
+
+.poll-remove-btn i {
+    margin: 10px;
+}
+
+.poll:hover .poll-remove-btn {
+    display: initial;
+}
+
+.answer {
+    margin-bottom: 20px;
+}
+
+.answer-vote-btn {
+    background: dodgerblue;
+}
+
+.answer-vote-btn,
+.answer-remove-btn {
+    box-sizing: content-box;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 0;
+    border-radius: 50%;
+    /* text-decoration: none; */
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+/* AddPollForm */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1998F3;
+    color: white;
+}
+
+.form label,
+.form input,
+.form span {
+    margin-bottom: 5px;
+}
+
+.form input {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid #1278D1;
+    background-color: #1998F3;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 2px;
+}
+    input:focus {
+        outline: none;
+    }
+
+    input::placeholder {
+        color: lightgray;
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+
+.form label,
+.form ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+.form label {
+    font-size: 20px;
+}
+
+.form button {
+    margin-top: 10px;
+    background-color: #1278D1;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 0;
+    font-weight: 300;
+}
+
+.form button.answer-remove-btn {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.form button.add-poll-btn:last-child {
+    margin-bottom: 40px;
+}
+
+.form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-remove-btn {
+    margin-right: 10px;
+    background: tomato;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgba(18, 120, 209, 0.877)
+}
+
+.icon-btn {
+    border: none;
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
